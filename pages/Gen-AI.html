@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generative AI</title>
+    <link rel="icon" href="../assets/images/navImg/Vector.svg" type="image/svg+xml">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/CSS/Gen-AI.css">
+<link rel="stylesheet" href="../assets/CSS/header.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"> 
+
+    <style>
+  
+
+
+
+    </style>
+</head>
+
+<body cz-shortcut-listen="true">
+           <!-- Preloader -->
+    <div id="preloader" style="opacity: 0; display: none;">
+        <img src="../assets/images/preload.png" alt="Loading..." id="preloader-image">
+    </div>
+ <!-- Content -->
+    <div id="content" style="display: block;">
+
+    
+ <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="../index.html"> <img src="../assets/images/Logo.png" alt="KOT Logo"></a>
+            </div>
+
+            <!-- Center nav -->
+            <ul class="nav-links" id="navLinks" style="padding-top: 12px;">
+                <li><button class="close-btn" onclick="toggleNav()">×</button></li>
+                <li>
+                    <a href="#">Corporate <i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="why-kot.html">Why KOT </a></li>
+                        <li><a href="board-of-directors.html">Board of Directors</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Careers <i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="careers.html">Jobs</a></li>
+                        <li><a href="#">Internships</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="our-services.html">Services <i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="agile-app.html"><img src="../assets/images/navImg/agileapp.png" alt=""></a></li>
+                        <li><a href="app-sculputure.html"><img src="../assets/images/navImg/appscu.png" alt=""></a></li>
+                        <li><a href="digit-trail-black.html"><img src="../assets/images/navImg/digitrail.png" alt=""></a></li>
+                        <li><a href="flawless-services.html"><img src="../assets/images/navImg/flawless.png" alt=""></a></li>
+                        <li><a href="graphoria-services.html"><img src="../assets/images/navImg/graphoria.png" alt=""></a></li>
+                        <li><a href="meerchanity-service.html"><img src="../assets/images/navImg/297286540.png" alt=""></a></li>
+                        <li><a href="web-sculputre.html"><img src="../assets/images/navImg/web-scu.png" alt=""></a></li>
+                        <!-- <li><a href="venture-xcelerator.html"><img src="../assets/images/navImg/venture.png" alt=""></a>
+                        </li> -->
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Consultancy <i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="Audits.html">Audits</a></li>
+                        <li><a href="Data-Enginerring.html">Data Engineering</a></li>
+                        <li><a href="Gen-AI.html">Generative AI</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Programs <i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="episode-service.html"><img src="../assets/images/navImg/episode.png" alt=""></a></li>
+                         <li><a href="venture-xcelerator.html"><img src="../assets/images/navImg/venture.png" alt=""></a></li>
+                        
+                    </ul>
+                </li>
+
+                
+               <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <!-- Right icons -->
+            <div class="nav-right">
+                <!-- <button><img src="https://www.worldometers.info/img/flags/uk-flag.gif" class="flag" alt="">
+                    English</button>
+                <button><i class="fas fa-shopping-cart"></i><a href="cart.html"> Cart </a></button> -->
+                <button><i class="fas fa-user"></i><a href="sign in email.html"> Sign In </a></button>
+                <!-- <button class="crownbtn" onclick="toggleMega()">
+                    <img src="../assets/images/navImg/Vector.svg" alt="Crown" class="crown-img">
+                </button> -->
+                <button class="hamburger" onclick="toggleHamburgerMega()"><i class="fas fa-th"></i></button>
+            </div>
+
+            <!-- Crown Mega menu -->
+            <div class="mega-menu" id="megaMenu">
+                <button class="close-btn" onclick="toggleMega()">×</button>
+                <div class="mega-content">
+                    <!-- Column 1 -->
+                    <div class="mega-col">
+                        <h4><a href="app-sculputure.html"> App Sculpt </a></h4>
+                        <ul>
+                            <li><a href="#">Native Mobile App (Android)</a></li>
+                            <li><a href="#">Native Mobile App (iOS)</a></li>
+                            <li><a href="#">Flutter App Development</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="mega-col">
+                        <h4><a href="app-sculputure.html"> App Sculpt </a></h4>
+                        <ul>
+                            <li><a href="#">Software as a Service</a></li>
+                            <li><a href="#">Point of Sales</a></li>
+                            <li><a href="#">Ecommerce Platforms</a></li>
+                            <li><a href="#">Healthcare Systems</a></li>
+                            <li><a href="#">LMS &amp; ERP Systems</a></li>
+                            <li><a href="#">Inventory &amp; HRM Systems</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="mega-col">
+                        <h4><a href="digit-trail-black.html"> DigiTrail </a></h4>
+                        <ul>
+                            <li><a href="#">SEO</a></li>
+                            <li><a href="#">Social Media Marketing</a></li>
+                            <li><a href="#">Content Marketing</a></li>
+                            <li><a href="#">PPC Marketing</a></li>
+                            <li><a href="#">Email Marketing</a></li>
+                            <li><a href="#">Branding &amp; Audit</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="mega-col">
+                        <h4><a href="graphoria-services.html"> Graphiora </a></h4>
+                        <ul>
+                            <li><a href="#">Logo &amp; Brand Identity</a></li>
+                            <li><a href="#">Print &amp; Digital Design</a></li>
+                            <li><a href="#">Web &amp; UI/UX Design</a></li>
+                            <li><a href="#">Packaging Design</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 5 -->
+                    <div class="mega-col">
+                        <h4><a href="web-sculputre.html"> Web Sculpt </a></h4>
+                        <ul>
+                            <li><a href="#">Custom Website Dev</a></li>
+                            <li><a href="#">Front &amp; Backend Dev</a></li>
+                            <li><a href="#">API Integration</a></li>
+                            <li><a href="#">Maintenance &amp; Support</a></li>
+                            <li><a href="#">Market Research</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 6 -->
+                    <div class="mega-col">
+                        <h4><a href="venture-xcelerator.html"> Venture Xcelerator </a></h4>
+                        <ul>
+                            <li><a href="#">Mentorship &amp; Coaching</a></li>
+                            <li><a href="#">Business Strategy</a></li>
+                            <li><a href="#">Networking &amp; Partnerships</a></li>
+                            <li><a href="#">Funding &amp; Investment</a></li>
+                        </ul>
+                    </div>
+                     <!-- Column  -->
+                    <div class="mega-col">
+                        <h4><a href="Education.html"> Support </a></h4>
+                        <ul>
+                        <li><a href="Education.html">Eduction Support</a></li>
+                        <li><a href="Partner.html">Partner Support</a></li>
+                        <li><a href="Work.html">Work Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hamburger Mega menu -->
+            <div class="hamburger-mega-menu" id="hamburgerMegaMenu">
+                <button class="close-btn" onclick="toggleHamburgerMega()">×</button>
+                <div class="hamburger-mega-content">
+                    <!-- Main Navigation Column -->
+                    <div class="hamburger-mega-col">
+                        <h4>Main Navigation</h4>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)" onclick="toggleHamburgerDropdown(this)">
+                                    Corporate <i class="fas fa-caret-down"></i>
+                                </a>
+                                <ul class="hamburger-dropdown">
+                                    <li><a href="why-kot.html">Why KOT</a></li>
+                                    <li><a href="board-of-directors.html">Board of Directors</a></li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" onclick="toggleHamburgerDropdown(this)">
+                                    Careers <i class="fas fa-caret-down"></i>
+                                </a>
+                                <ul class="hamburger-dropdown">
+                                    <li><a href="careers.html">Jobs</a></li>
+                                    <li><a href="#">Internships</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" onclick="toggleHamburgerDropdown(this)">
+                                    Service <i class="fas fa-caret-down"></i>
+                                </a>
+                                <ul class="hamburger-dropdown">
+                                  <li><a href="agile-app.html"><img src="../assets/images/navImg/agileapp.png" alt=""></a></li>
+                        <li><a href="app-sculputure.html"><img src="../assets/images/navImg/appscu.png" alt=""></a></li>
+                        <li><a href="digit-trail-black.html"><img src="../assets/images/navImg/digitrail.png" alt=""></a></li>
+                        <li><a href="flawless-services.html"><img src="../assets/images/navImg/flawless.png" alt=""></a></li>
+                        <li><a href="graphoria-services.html"><img src="../assets/images/navImg/graphoria.png" alt=""></a></li>
+                        <li><a href="meerchanity-service.html"><img src="../assets/images/navImg/297286540.png" alt=""></a></li>
+                        <li><a href="web-sculputre.html"><img src="../assets/images/navImg/web-scu.png" alt=""></a></li>
+                                </ul>
+                            </li>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)" onclick="toggleHamburgerDropdown(this)">
+                                        Consultancy <i class="fas fa-caret-down"></i>
+                                    </a>
+                                <ul class="hamburger-dropdown">
+                                    <li><a href="Audits.html">Audits</a></li>
+                                    <li><a href="Data-Enginerring.html">Data Engineering</a></li>
+                                    <li><a href="Gen-AI.html">Generative AI</a></li>
+
+                                </ul>
+                                </li>
+                              
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)" onclick="toggleHamburgerDropdown(this)">
+                                            Programs <i class="fas fa-caret-down"></i>
+                                        </a>
+                                        <ul class="hamburger-dropdown">
+                                            <li><a href="episode-service.html"><img src="../assets/images/navImg/episode.png" alt=""></a></li>
+                                            <li><a href="venture-xcelerator.html"><img src="../assets/images/navImg/venture.png" alt=""></a></li>
+                       
+                                        </ul>
+                                        </li>
+                                         <li>
+                                        <a href="javascript:void(0)" onclick="toggleHamburgerDropdown(this)">
+                                            Support <i class="fas fa-caret-down"></i>
+                                        </a>
+                                        <ul class="hamburger-dropdown">
+                                            <li><a href="#">Education Support</a></li>
+                                            <li><a href="#">Partner Support</a></li>
+                                            <li><a href="#">Work Support</a></li>
+                                        </ul>
+                                </li></ul>
+                                
+                                   
+               <li><a href="pages/contact.html">Contact Us</a></li>
+            </ul>
+
+
+                    </ul></div>
+                </div>
+            </div>
+        </nav>
+        <!-- ================= HEADER END ================= -->       
+
+
+
+ <!-- Marquee Section with Side Images on Left & Right -->
+        <div class="marquee-wrapper  position-relative d-flex align-items-center overflow-hidden" style="height: 45px;">
+
+            <!-- Left Image -->
+            <div class="position-absolute start-0 top-0 bottom-0 z-2 d-flex align-items-center ">
+                <img src="../assets/images/Work-Support/rightmarquee.png" alt="Left" class="marqueeajust">
+            </div>
+
+            <!-- Scrolling Text -->
+            <div class="marquee-text-container flex-grow-1 px-5">
+                <div class="marquee-text-track">
+                    <div class="marquee-text fw-bold">
+                        <span>
+                            <img src="../assets/images/Work-Support/marqueetextlogo.svg" alt="">
+                        </span>
+                        KOT Enterprises priorities cultural values and well being of work spaces. Therefore staff will
+                        be visiting Siran Valley.
+                    </div>
+                    <div class="marquee-text fw-bold">
+                        <span>
+                            <img src="../assets/images/Work-Support/marqueetextlogo.svg" alt="">
+                        </span>
+                        KOT Enterprises priorities cultural values and well being of work spaces. Therefore staff will
+                        be visiting Siran Valley.
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Right Image -->
+            <div class="position-absolute end-0 top-0 bottom-0 z-2 d-flex align-items-center ">
+                <img src="../assets/images/Work-Support/leftmarquee .png" alt="Right" class="marqueeajustright" style="margin-right: 11%;">
+            </div>
+
+        </div>
+
+    <div class="container-fluid main"> </div>
+    
+    <div class="container-fluid main">
+        <!-- Why KOT Enterprises Section -->
+        <div class="container-fluid Audit">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h1 class="mb-4 mt-5">
+                            Build Smarter Systems. Deliver Creative Outcomes.
+                        </h1>
+                        <p>
+                            Generative AI is more than just a trending tool; it’s a force
+                            
+                            redefining how businesses operate, engage, and progress. At KOT
+                            
+                            Enterprises, we turn this technology into a real-world impact.
+                        </p>
+                        <p>
+                            Whether you’re looking to automate content, enhance
+                            decision- making, or develop AI-powered products, we help you adopt 
+                            generative AI with confidence, security, and measurable value.
+                        </p>
+                        <br>
+  <div class="submit-container" style="display: inline-block; margin-left:-50px;">
+  <button type="submit" class="btn-submit" style="background-image: url(../assets/images/Audit/buttonframe.png);
+           background-size: 100% 100%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           white-space: nowrap;
+           border: none;
+           background-repeat: no-repeat;
+           background-position: center;
+           font-size: 14px;
+           color: white;
+           cursor: pointer;
+           margin-left: 27%;
+    width: 190px;
+    height: 55px;
+
+           ">
+            <a style="text-decoration: none; color:white;" href="../index.html"> GET STARTED </a>
+                       
+  </button>
+</div>
+
+                        <!-- <img src="../assets/images/Gen-AI/Group 2079 (1).png" alt="KOT Graphic" class="img-fluid mt-4" /> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- Services We Provide section stat -->
+        <!-- Core Values Section -->
+   <div class="container-fluid services-card">
+    <div class="container text-center">
+        <h1 class="fw-bold heading-over-images">Our Generative AI Capabilities</h1>
+      
+        <!-- Carousel -->
+        <div class="services-carousel">
+            <div class="genai-services-row">
+
+                <!-- Card 1 -->
+                <div class="services-card-box">
+                    <h1 class="services-card-title margin-top-110">AI Strategy &amp; Use <br> Case  Discovery</h1>
+                    <p class="services-card-text">
+                       We start with a business-first approach by exploring how generative AI fits your vision, systems, and value streams.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="services-card-box">
+                    <h1 class="services-card-title margin-top-110">Proof of Concept (PoC) <br> &amp; Prototyping</h1>
+                    <p class="services-card-text">
+                        We quickly build working prototypes to validate ideas, demonstrate value, and guide investment.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="services-card-box">
+                    <h1 class="services-card-title margin-top-100">Custom AI Model <br> Development</h1>
+                    <p class="services-card-text">
+                        We design, refine, and deploy LLMs tailored to your domain, whether it’s content, code, audio, or structured data.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="services-card-box">
+                    <h1 class="services-card-title margin-top-100">AI Integration into <br> Business Workflows</h1>
+                    <p class="services-card-text">
+                        From chatbots to creative tools, we embed AI seamlessly into your platforms, tools, and processes, built for scale and usability.
+                    </p>
+                </div>
+
+            
+
+                <!-- Card 1 -->
+                <div class="services-card-box">
+                    <h1 class="services-card-title margin-top-110">AI Strategy &amp; Use <br> Case  Discovery</h1>
+                    <p class="services-card-text">
+                       We start with a business-first approach by exploring how generative AI fits your vision, systems, and value streams.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="services-card-box">
+                    <h1 class="services-card-title margin-top-110">Proof of Concept (PoC) <br> &amp; Prototyping</h1>
+                    <p class="services-card-text">
+                        We quickly build working prototypes to validate ideas, demonstrate value, and guide investment.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="services-card-box">
+                    <h1 class="services-card-title margin-top-100">Custom AI Model <br> Development</h1>
+                    <p class="services-card-text">
+                        We design, refine, and deploy LLMs tailored to your domain, whether it’s content, code, audio, or structured data.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="services-card-box">
+                    <h1 class="services-card-title margin-top-100">AI Integration into <br> Business Workflows</h1>
+                    <p class="services-card-text">
+                        From chatbots to creative tools, we embed AI seamlessly into your platforms, tools, and processes, built for scale and usability.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <!-- our impact section -->
+
+        <div class="container-fluid our-impact">
+            <div class="container">
+                <h1 class="our-impact-heading" style="
+            padding: 15px 0 80px 0;
+            color: #0C72BA;
+            font-size: 52px;
+            font-weight: 900;
+            text-align: center;
+           
+          ">
+                    Solutions We Deliver
+                </h1>
+               
+                <div class="opportunity-cards row" style="justify-content: center; gap: 35px">
+                    <div class="col-md-2" style="margin-bottom: 5%;">
+                        <img src="../assets/images/Gen-AI/Group 2105 (1).png" alt="">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="../assets/images/Gen-AI/Group 2106 (1).png" alt="">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="../assets/images/Gen-AI/Group 2107 (1).png" alt="">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="../assets/images/Gen-AI/Group 2108 (1).png" alt="">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="../assets/images/Gen-AI/Group 2109 (1).png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid core-values-section">
+            <div class="container text-center">
+                <h1 class="fw-bold heading-over-images">Your Trusted Support Partner</h1>
+                <div class="row justify-content-center g-4" style="margin-top: 30px">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="core-value-box" style="background-image: url('../assets/images/Gen-AI/1.png');">
+                            <h1 class="core-value-title" style="margin-top: 85px; font-size: 20px;">Business-Aligned  Approach</h1>
+                            <p class="core-value-text" style="padding: 0 30px;">
+                              We prioritize real outcomes efficiency, creativity, revenue, not hype or complexity.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="core-value-box" style="background-image: url('../assets/images/Gen-AI/2.png');">
+                            <h1 class="core-value-title" style="margin-top: 120px;">Technical <br> Expertise with <br> Leading Platforms</h1>
+                            <p class="core-value-text" style="padding: 0px 30px 30px 30px;">
+                               From OpenAI and Hugging Face to custom  LLMs  and enterprise APIs  we  bring best-fit technologies to every project.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="core-value-box" style="background-image: url('../assets/images/Gen-AI/3.png');">
+                            <h1 class="core-value-title" style="margin-top: 90px;">Ethics &amp; <br> Governance First</h1>
+                            <p class="core-value-text" style="padding: 0 30px;">
+                                We design responsible AI systems with fairness,  compliance, and  auditability in mind.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="core-value-box" style="background-image: url('../assets/images/Gen-AI/4.png');">
+                            <h1 class="core-value-title" style="margin-top: 90px;">Industry <br> Adaptability</h1>
+                            <p class="core-value-text" style="padding: 0 30px;">We’ve worked across healthcare, finance,  e-commerce, education, logistics, and tech, each solution tailored to your  needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- slider sections -->
+
+  <div class="container-fluid " style="background-color:#1E1E1E;   --bs-gutter-x: 0%;
+    ">
+
+    <!-- Workshop and resources section -->
+    <div class="container-fluid mt-4 offercontainer">
+
+      <!-- Header -->
+      <div class="text-WVX">
+        <h1 style="font-weight: 800;">What You Can Achieve with <br> Generative AI</h1>
+      </div>
+
+      <!-- Slider Container -->
+      <div class="slider-container-wvx">
+        <!-- Side Images -->
+        <img src="../assets/images/Gen-AI/rightshadow.png" class="slider-side-image-wvx left-image-wvx" alt="">
+        <img src="../assets/images/Gen-AI/leftshadow.png" class="slider-side-image-wvx right-image-wvx" alt="">
+
+
+        <!-- Slider -->
+        <div class="slider-wrapper-wvx" id="slider">
+          <div class="slider-item-wvx">
+            <div class="slider-item-image-1"></div>
+            <p class="WVX-paragraph py-2">Streamline operations by automating repetitive and manual tasks. </p>
+          </div>
+          <div class="slider-item-wvx">
+            <div class="slider-item-image-2"></div>
+            <p class="WVX-paragraph py-2">Boost productivity with AI-generated content, code, and insights. 
+          </p></div>
+          <div class="slider-item-wvx">
+            <div class="slider-item-image-3"></div>
+            <p class="WVX-paragraph py-2">Enhance customer experience with AI assistants and dynamic personalization.  </p>
+          </div>
+          <div class="slider-item-wvx">
+            <div class="slider-item-image-1"></div>
+            <p class="WVX-paragraph py-2">Reduce costs and time-to-market with rapid prototyping and intelligent workflow. </p>
+          </div>
+          <div class="slider-item-wvx">
+            <div class="slider-item-image-2"></div>
+            <p class="WVX-paragraph py-2">Enable creativity and innovation through data-driven content and ideation tools.</p>
+          </div>
+          <div class="slider-item-wvx">
+            <div class="slider-item-image-3"></div>
+            <p class="WVX-paragraph py-2">Access to advanced tech, design, and development teams</p>
+          </div>
+        
+          <div class="slider-item-wvx">
+            <div class="slider-item-image-1"></div>
+            <p class="WVX-paragraph py-2">Streamline operations by automating repetitive and manual tasks. </p>
+          </div>
+          <div class="slider-item-wvx">
+            <div class="slider-item-image-2"></div>
+            <p class="WVX-paragraph py-2">Boost productivity with AI-generated content, code, and insights. 
+          </p></div>
+          <div class="slider-item-wvx">
+            <div class="slider-item-image-3"></div>
+            <p class="WVX-paragraph py-2">Enhance customer experience with AI assistants and dynamic personalization.  </p>
+          </div>
+          <div class="slider-item-wvx">
+            <div class="slider-item-image-1"></div>
+            <p class="WVX-paragraph py-2">Reduce costs and time-to-market with rapid prototyping and intelligent workflow. </p>
+          </div>
+          <div class="slider-item-wvx">
+            <div class="slider-item-image-2"></div>
+            <p class="WVX-paragraph py-2">Enable creativity and innovation through data-driven content and ideation tools.</p>
+          </div>
+          <div class="slider-item-wvx">
+            <div class="slider-item-image-3"></div>
+            <p class="WVX-paragraph py-2">Access to advanced tech, design, and development teams</p>
+          </div>
+        </div>
+
+       
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+
+        <!-- last section -->
+       <div class="container-fluid graphiora">
+            <div class="container">
+                <h1 class="graphiora-title">How We Work</h1>
+                <!-- <p style="font-size: 22px; text-align: center; color: #FFFFFF;
+       padding-bottom: 25px;">At KOT Enterprises, we don’t just move data, we build the systems that make it <br> work
+                    for you. Here’s what sets our Data Engineering services apart:</p> -->
+
+                <div class="graphiora-card-main"></div>
+
+                <div class="graphiora-card-1 row">
+                    <div class="graphcard1">
+                        <h1>DISCOVERY</h1>
+                        <p>Identify high-impact areas and <br> align AI to your strategy</p>
+                    </div>
+                    <div class="graphcard2">
+                        <h1>PROTOTYPE</h1>
+                        <p>Build, test, and iterate on use- <br>    case-specific models or apps</p>
+                    </div>
+                </div>
+
+                <div class="graphiora-card-2 row" style="padding-top: 20px;">
+                    <div class="graphcard3">
+                        <h1>DEVLOP</h1>
+                        <p>Deploy generative AI systems with <br> scalability and security</p>
+                    </div>
+                    <div class="graphcard4">
+                        <h1>INTEGRATE</h1>
+                        <p>Connect to your business <br> platforms, tools, and teams</p>
+                    </div>
+                      <div class="graphcard4  graphcard5">
+                        <h1>OPTIMIZE</h1>
+                        <p>Monitor usage, refine prompts,<br> and improve accuracy over time</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+                <br>
+
+        <!-- contact form -->
+        <div class="container-fluid Audit ">
+            <div class="geometric-bg"></div>
+
+            <div class="main-container">
+                <div class="container-fluid content-section">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <!-- Left Content -->
+                            <div class="col-lg-6 col-md-6 content-left">
+                                <h1 class="contact-title" style=" font-size: 52px;
+            font-weight: 800;
+            color: #3076BB;
+            margin-bottom: 40px;
+            line-height: 1.1;">Contact Us</h1>
+                                <p class="description">Whether you're exploring generative AI for the first time or scaling an existing model, KOT Enterprises is your end-to-end partner in innovation. </p>
+                                <div class="action-buttons">
+
+                                </div>
+                            </div>
+
+                            <!-- Right Form -->
+                            <div class="col-lg-6 col-md-6 form-section" style="padding-left: 50px;">
+                                <div class="form-container" style="background-image: url(../assets/images/Gen-AI/Subtract\ \(6\).png); background-size: 100% 100%; margin-top: 45px;">
+                                                                   <iframe scrolling="no" style="background-color: #191919; height: 60vh !important; width: 80%; margin-left: 5%; margin-top: 5%;" src="https://kot-e.com/flexform/vf/5ba523bf43c0f90359ad653b5a815b6a?with_logo=1" frameborder="0" loading="lazy" sandbox="allow-scripts allow-top-navigation allow-forms allow-same-origin allow-popups" allowfullscreen="">
+</iframe>
+  
+                                    <!-- Form Header -->
+                                    <!-- <div class="form-header">
+                                        <h3 class="form-title">Request a Consultation</h3>
+                                        <p class="form-subtitle">Together, let’s build a future that is both secure and
+                                            reliable.</p>
+                                    </div> -->
+
+                                    <!-- Scrollable Form Area -->
+                                     
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="toastRoot" class="toast-wrap" aria-live="polite" aria-atomic="true"></div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row justify-content-between">
+                    <div class="col-md-4 col-12">
+                        <p>
+                            This website is authorized for office use externally or internally marked or addressed
+                            medium copying or posting is an infringement. This website may not be addressed or otherwise
+                            reproduced, posted or transmitted, without the permission of the Chief Executive Officer at
+                            KOT ENTERPRISES (PRIVATE) LIMITED.
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-12 d-flex align-items-center justify-content-center">
+                        <p style="font-size: 15px;">© 2025 KOT Enterprises. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-4 col-12 d-flex align-items-center justify-content-md-end justify-content-center">
+                     
+<a href="https://www.facebook.com/share/19DBLw7Y7x/?mibextid=wwXIfr"> <i class="fab fa-facebook-f social-icon"></i> </a>
+                        <a href="https://www.instagram.com/kotglobal?igsh=eHFrMnl1dmFhZWZ4&amp;utm_source=qr"><i class="fab fa-instagram social-icon"></i></a>
+
+                        <a href="https://www.linkedin.com/company/kotenterprises/"><i class="fab fa-linkedin-in social-icon"></i></a>
+                         </div>
+                </div>
+            </div>
+        </footer>
+
+        
+ <!-- Swiper JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    // Name validation
+    document.getElementById("fullName").addEventListener("input", function () {
+        const regex = /^[A-Za-z\s]*$/;
+        if (!regex.test(this.value)) {
+            this.value = this.value.replace(/[^A-Za-z\s]/g, '');
+            document.getElementById("nameError").style.display = "block";
+        } else {
+            document.getElementById("nameError").style.display = "none";
+        }
+    });
+
+    // Phone validation (only numbers + max 16 digits)
+    document.getElementById("phone").addEventListener("input", function () {
+        this.value = this.value.replace(/[^0-9]/g, '');
+        if (!/^[0-9]*$/.test(this.value)) {
+            document.getElementById("phoneError").style.display = "block";
+        } else {
+            document.getElementById("phoneError").style.display = "none";
+        }
+
+        // enforce max 16 digits
+        if (this.value.length > 16) {
+            this.value = this.value.slice(0, 16);
+        }
+    });
+
+    // Email live validation
+    document.getElementById("email").addEventListener("input", function () {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!regex.test(this.value)) {
+            document.getElementById("emailError").style.display = "block";
+        } else {
+            document.getElementById("emailError").style.display = "none";
+        }
+    });
+
+    // Live message character count
+    const messageBox = document.getElementById("message");
+    const charCount = document.getElementById("charCount");
+
+    messageBox.addEventListener("input", function () {
+        charCount.textContent = this.value.length + " / 500";
+        if (this.value.length < 5) {
+            charCount.style.color = "red";
+        } else {
+            charCount.style.color = "green";
+        }
+    });
+
+    // Prevent submission if invalid
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+        const nameValid = document.getElementById("fullName").value.trim().length > 0;
+        const messageValid = document.getElementById("message").value.length >= 5;
+        const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(document.getElementById("email").value);
+        const phoneValid = document.getElementById("phone").value.length > 0 && document.getElementById("phone").value.length <= 16;
+
+        if (!nameValid || !messageValid || !emailValid || !phoneValid) {
+            e.preventDefault();
+            alert("Please fix errors before submitting.");
+        }
+    });
+
+
+
+
+     const slider = document.getElementById("slider");
+
+// Duplicate the content for seamless looping
+slider.innerHTML += slider.innerHTML;
+
+let scrollSpeed = 1; // pixels per frame (~60fps)
+
+function smoothScroll() {
+  slider.scrollLeft += scrollSpeed;
+
+  // If we've scrolled past half (because we duplicated)
+  if (slider.scrollLeft >= slider.scrollWidth / 2) {
+    slider.scrollLeft = 0; // instantly jump back, no flicker
+  }
+
+  requestAnimationFrame(smoothScroll);
+}
+
+// Hover pause
+slider.addEventListener("mouseenter", () => scrollSpeed = 0);
+slider.addEventListener("mouseleave", () => scrollSpeed = 1);
+
+// Start the scroll
+smoothScroll();
+
+window.addEventListener("load", function () {
+    const carousel = document.querySelector(".services-carousel");
+    const row = document.querySelector(".genai-services-row");
+
+    // Duplicate cards for infinite effect
+    row.innerHTML += row.innerHTML; // one-time duplication
+
+    const cardWidth = row.children[0].offsetWidth + 20; // card + gap
+    let scrollPosition = 0;
+    let autoSlide; // store interval ID
+
+    function scrollNextCard() {
+        scrollPosition += cardWidth;
+
+        // If we scrolled past the first full set of cards...
+        if (scrollPosition >= row.scrollWidth / 2) {
+            // Jump back instantly to the same visual spot in the first set
+            scrollPosition = scrollPosition - row.scrollWidth / 2;
+            carousel.scrollLeft = scrollPosition;
+        }
+
+        // Smooth scroll to the next card
+        carousel.scrollTo({
+            left: scrollPosition,
+            behavior: "smooth"
+        });
+    }
+
+    function startAutoSlide() {
+        autoSlide = setInterval(scrollNextCard, 2000);
+    }
+
+    function stopAutoSlide() {
+        clearInterval(autoSlide);
+    }
+
+    // Start sliding immediately
+    startAutoSlide();
+
+    // Pause on hover
+    carousel.addEventListener("mouseenter", stopAutoSlide);
+    carousel.addEventListener("mouseleave", startAutoSlide);
+});
+
+   window.onload = function () {
+            // Hide the preloader after 3 seconds
+            setTimeout(function () {
+                document.getElementById('preloader').style.opacity = '0';
+                document.getElementById('content').style.display = 'block';
+                
+                // Remove the preloader from the DOM after fade out
+                setTimeout(function () {
+                    document.getElementById('preloader').style.display = 'none';
+                }, 500);
+            }, 3000); // Preloader will disappear after 3 seconds
+        };
+function showFileName(input) {
+    const fileName = input.files.length > 0 ? input.files[0].name : "";
+    document.getElementById("fileName").innerText = fileName;
+}
+        document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const submitBtn = document.querySelector("#contactForm button[type='submit']");
+    let formData = new FormData(this);
+
+    fetch("submit.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(res => res.json())
+    .then(data => {
+        document.body.style.overflow = "hidden"; // Hide scrollbar
+
+        Swal.fire({
+            toast: true,
+            position: 'top', // Centered at top
+            icon: data.status === "success" ? 'success' : 'error',
+            title: data.message,
+            showConfirmButton: false,
+            timer: 5000, // 5 seconds
+            background: '#4cafef',
+            color: '#fff',
+            customClass: {
+                popup: 'big-toast'
+            },
+            didOpen: (toast) => {
+                toast.style.animation = "slideInDown 0.5s ease forwards";
+            },
+            willClose: () => {
+                document.body.style.overflow = ""; // Restore scrollbar
+            }
+        });
+
+        if (data.status === "success") {
+            setTimeout(() => {
+                location.reload();
+            }, 4000);
+        } else {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = 'SEND MESSAGE';
+        }
+    })
+    .catch(err => {
+        document.body.style.overflow = "hidden";
+
+        Swal.fire({
+            toast: true,
+            position: 'top',
+            icon: 'error',
+            title: 'Something went wrong!',
+            showConfirmButton: false,
+            timer: 5000,
+            background: '#ff4f4f',
+            color: '#fff',
+            customClass: {
+                popup: 'big-toast'
+            },
+            didOpen: (toast) => {
+                toast.style.animation = "slideInDown 0.5s ease forwards";
+            },
+            willClose: () => {
+                document.body.style.overflow = "";
+            }
+        });
+
+        console.error(err);
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = 'SEND MESSAGE';
+    });
+});
+// Toggle nav menu
+      function toggleNav() {
+        document.getElementById('navLinks').classList.toggle('show');
+      }
+
+      // Toggle crown mega menu
+      function toggleMega() {
+        document.getElementById('megaMenu').classList.toggle('show');
+        // Close hamburger mega menu if open
+        document.getElementById('hamburgerMegaMenu').classList.remove('show');
+      }
+      
+      // Toggle hamburger mega menu
+      function toggleHamburgerMega() {
+        document.getElementById('hamburgerMegaMenu').classList.toggle('show');
+        // Close crown mega menu if open
+        document.getElementById('megaMenu').classList.remove('show');
+      }
+      
+      // Toggle dropdowns in hamburger mega menu
+      function toggleHamburgerDropdown(element) {
+        const dropdown = element.nextElementSibling;
+        const icon = element.querySelector('i');
+        
+        dropdown.classList.toggle('show');
+        
+        // Rotate caret icon
+        if (dropdown.classList.contains('show')) {
+          icon.classList.remove('fa-caret-down');
+          icon.classList.add('fa-caret-up');
+        } else {
+          icon.classList.remove('fa-caret-up');
+          icon.classList.add('fa-caret-down');
+        }
+      }
+
+      // Close menus when clicking outside
+      document.addEventListener('click', function(event) {
+        const megaMenu = document.getElementById('megaMenu');
+        const hamburgerMegaMenu = document.getElementById('hamburgerMegaMenu');
+        const crownBtn = document.querySelector('.crownbtn');
+        const hamburgerBtn = document.querySelector('.hamburger');
+        
+        // Close mega menu if clicked outside
+        if (megaMenu.classList.contains('show') && 
+            !megaMenu.contains(event.target) && 
+            !crownBtn.contains(event.target)) {
+          megaMenu.classList.remove('show');
+        }
+        
+        // Close hamburger mega menu if clicked outside
+        if (hamburgerMegaMenu.classList.contains('show') && 
+            !hamburgerMegaMenu.contains(event.target) && 
+            !hamburgerBtn.contains(event.target)) {
+          hamburgerMegaMenu.classList.remove('show');
+        }
+      });
+
+      // Handle dropdowns on mobile
+      document.addEventListener('DOMContentLoaded', function () {
+        const navItems = document.querySelectorAll('.nav-links > li');
+        navItems.forEach(item => {
+          item.addEventListener('click', function (e) {
+            if (window.innerWidth <= 767) {
+              e.preventDefault(); 
+              navItems.forEach(i => {
+                if (i !== item) i.classList.remove('open');
+              });
+              item.classList.toggle('open');
+            }
+          });
+        });
+      });
+  </script>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</div></body>
+</html>

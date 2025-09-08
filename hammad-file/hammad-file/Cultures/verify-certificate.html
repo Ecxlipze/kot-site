@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOT ENTERPRISES</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+    />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/styles/styles.css" />
+  <link rel="stylesheet" href="../assets/styles/style.min.css">
+    <link rel="stylesheet" href="../assets/styles/media_querie.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+
+
+    </style>
+  </head>
+  <body class="overflow-x-hidden">
+   <!-- class="overflow-x-hidden"> -->
+    <!-- Pattern Background -->
+      <div id="preloader">
+        <img src="../assets/images/preload.png" alt="Loading..." id="preloader-image">
+    </div>
+
+    <!-- Content -->
+    <div id="content">
+    <div class="hero-pattern"></div>
+
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="../index.html"> <img src="../assets/images/Logo.png" alt="KOT Logo"></a>
+      </div>
+
+      <!-- Center nav -->
+      <ul class="nav-links" id="navLinks" style="padding-top: 12px;">
+        <li><button class="close-btn" onclick="toggleNav()">×</button></li>
+        <li><a href="careerHomePage.html">Careers</a></li>
+        <li><a href="hiring-tips.html">Hiring Tips</a></li>
+        <li><a href="#">Locations</a></li>
+        <li>
+          <a href="oppurtunities.html">Opportunities <i class="fas fa-caret-down"></i></a>
+          <ul>
+            <li><a href="Audits.php">Audits</a></li>
+            <li><a href="Education.php">Education Support</a></li>
+            <li><a href="Partner.php">Partner Support</a></li>
+            <li><a href="Work.php">Work Support</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Programs <i class="fas fa-caret-down"></i></a>
+          <ul>
+            <li><a href="#">SaaS Tools</a></li>
+            <li><a href="#">E-commerce</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"> Contact Us <i class="fas fa-caret-down"></i></a>
+          <ul>
+            <li><a href="Data-Enginerring.php">Data Engineering</a></li>
+            <li><a href="Gen-AI.php">Generative AI</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Right icons -->
+      <div class="nav-right">
+        <button><img src="https://www.worldometers.info/img/flags/uk-flag.gif" class="flag" alt=""> English</button>
+        <button><i class="fas fa-shopping-cart"></i><a href="cart.php"> Cart </a></button>
+        <button><i class="fas fa-user"></i><a href="sign in email.php"> Sign In </a></button>
+        <button class="crownbtn" onclick="toggleMega()"><i class="fas fa-crown"></i></button>
+        <button class="hamburger" onclick="toggleHamburgerMega()"><i class="fas fa-th"></i></button>
+      </div>
+
+      <!-- Crown Mega menu -->
+      <div class="mega-menu" id="megaMenu">
+        <button class="close-btn" onclick="toggleMega()">×</button>
+        <div class="mega-content">
+          <!-- Column 1 -->
+          <div class="mega-col">
+            <h4><a href="../pages2/AppSculp.php"> App Sculpt </a></h4>
+            <ul>
+              <li><a href="#">Native Mobile App (Android)</a></li>
+              <li><a href="#">Native Mobile App (iOS)</a></li>
+              <li><a href="#">Flutter App Development</a></li>
+            </ul>
+          </div>
+          <!-- Column 2 -->
+          <div class="mega-col">
+            <h4><a href="../pages2/AppSculp.php"> App Sculpt </a></h4>
+            <ul>
+              <li><a href="#">Software as a Service</a></li>
+              <li><a href="#">Point of Sales</a></li>
+              <li><a href="#">Ecommerce Platforms</a></li>
+              <li><a href="#">Healthcare Systems</a></li>
+              <li><a href="#">LMS & ERP Systems</a></li>
+              <li><a href="#">Inventory & HRM Systems</a></li>
+            </ul>
+          </div>
+          <!-- Column 3 -->
+          <div class="mega-col">
+            <h4><a href="../pages2/digitrail.php"> DigiTrail </a></h4>
+            <ul>
+              <li><a href="#">SEO</a></li>
+              <li><a href="#">Social Media Marketing</a></li>
+              <li><a href="#">Content Marketing</a></li>
+              <li><a href="#">PPC Marketing</a></li>
+              <li><a href="#">Email Marketing</a></li>
+              <li><a href="#">Branding & Audit</a></li>
+            </ul>
+          </div>
+          <!-- Column 4 -->
+          <div class="mega-col">
+            <h4><a href="../pages2/graphoria.php"> Graphiora </a></h4>
+            <ul>
+              <li><a href="#">Logo & Brand Identity</a></li>
+              <li><a href="#">Print & Digital Design</a></li>
+              <li><a href="#">Web & UI/UX Design</a></li>
+              <li><a href="#">Packaging Design</a></li>
+            </ul>
+          </div>
+          <!-- Column 5 -->
+          <div class="mega-col">
+            <h4><a href="../pages2/web-sculputer.php"> Web Sculpt </a></h4>
+            <ul>
+              <li><a href="#">Custom Website Dev</a></li>
+              <li><a href="#">Front & Backend Dev</a></li>
+              <li><a href="#">API Integration</a></li>
+              <li><a href="#">Maintenance & Support</a></li>
+              <li><a href="#">Market Research</a></li>
+            </ul>
+          </div>
+          <!-- Column 6 -->
+          <div class="mega-col">
+            <h4><a href="../pages2/venture-xecelator.php"> Venture Xcelerator </a></h4>
+            <ul>
+              <li><a href="#">Mentorship & Coaching</a></li>
+              <li><a href="#">Business Strategy</a></li>
+              <li><a href="#">Networking & Partnerships</a></li>
+              <li><a href="#">Funding & Investment</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Hamburger Mega menu -->
+      <div class="hamburger-mega-menu" id="hamburgerMegaMenu">
+        <button class="close-btn" onclick="toggleHamburgerMega()">×</button>
+        <div class="hamburger-mega-content">
+          <!-- Main Navigation Column -->
+          <div class="hamburger-mega-col">
+            <h4>Main Navigation</h4>
+            <ul>
+              <li><a href="careerHomePage.html">Careers</a></li>
+              <li><a href="hiring-tips.html">Hiring Tips</a></li>
+              <li><a href="#">Locations</a></li>
+              <li>
+                <a href="javascript:void(0)" onclick="toggleHamburgerDropdown(this)">
+               <a href="oppurtunities.html">   Opportunities <i class="fas fa-caret-down"></i> </a>
+                </a>
+                <ul class="hamburger-dropdown">
+                  <li><a href="Audits.php">Audits</a></li>
+                  <li><a href="Education.php">Education Support</a></li>
+                  <li><a href="Partner.php">Partner Support</a></li>
+                  <li><a href="Work.php">Work Support</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0)" onclick="toggleHamburgerDropdown(this)">
+                  Programs <i class="fas fa-caret-down"></i>
+                </a>
+                <ul class="hamburger-dropdown">
+                  <li><a href="#">SaaS Tools</a></li>
+                  <li><a href="#">E-commerce</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0)" onclick="toggleHamburgerDropdown(this)">
+                  Contact Us <i class="fas fa-caret-down"></i>
+                </a>
+                <ul class="hamburger-dropdown">
+                  <li><a href="Data-Enginerring.php">Data Engineering</a></li>
+                  <li><a href="Gen-AI.php">Generative AI</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ================= HEADER END ================= -->
+  <!-- IUTP-section-start -->
+<div class="container-fluid ver-iutp-bg-image  " >
+   <!-- Marquee Section with Side Images on Left & Right -->
+<div class="marquee-wrapper  position-relative d-flex align-items-center overflow-hidden" style="height: 60px;">
+  
+  <!-- Left Image -->
+  <div class="position-absolute start-0 top-0 bottom-0 z-2 d-flex align-items-center px-2 ">
+    <img src="../assets/images/marquee-left-image.png" alt="Left" class="marqueeajust" />
+  </div>
+
+  <!-- Scrolling Text -->
+  <div class="marquee-text-container flex-grow-1 px-5">
+  <div class="marquee-text-track">
+    <div class="marquee-text fw-bold">
+      <span>
+        <img src="../assets/images/marquee.png" alt="">
+      </span>
+      KOT Enterprises priorities cultural values and well being of work spaces. Therefore staff will be visiting Siran Valley.
+    </div>
+    <div class="marquee-text fw-bold">
+      <span>
+        <img src="../assets/images/marquee.png" alt="">
+      </span>
+      KOT Enterprises priorities cultural values and well being of work spaces. Therefore staff will be visiting Siran Valley.
+    </div>
+  </div>
+</div>
+
+
+  <!-- Right Image -->
+  <div class="position-absolute end-0 top-0 bottom-0 z-2 d-flex align-items-center px-2 ">
+    <img src="../assets/images/marquee-right-image.png" alt="Right" class="marqueeajustright" style="margin-right: 11%;"/>
+  </div>
+
+</div>
+<!-- marquee area end here -->
+<!-- Verify Your Certificate -->
+<div class="Verify-main-certification">
+  <div class="verify-main-certitification-text">
+    <h1>Certificate Verification Center</h1>
+  </div>
+
+  <form class="main-form">
+    <!-- First main div: Input Fields -->
+    <div class="form-row-1">
+      <div class="form-field">
+        <label for="certificate_number">Certificate #:</label>
+        <input type="text" id="certificate_number" name="certificate_number" placeholder="Enter certificate number">
+      </div>
+
+      <div class="form-field">
+        <label for="issue_date">Issue Date:</label>
+        <input type="date" id="issue_date" name="issue_date" placeholder="YYYY-MM-DD">
+      </div>
+    </div>
+
+    <!-- Second main div: Button -->
+    <div class="form-row-2">
+      <div class="form-button">
+        <button type="submit">Get Certificate</button>
+      </div>
+    </div>
+
+    <!-- Third main div: Image -->
+    <div class="form-row-3">
+      <div class="form-image">
+        <h5>MUHAMMAD QAZAFI</h5>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
+<!-- Verify Your Certificate -end -->
+
+
+
+
+
+<!-- footer-section start -->
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-left">
+    <p>
+      This website is authorized for office use externally or internally
+      marked or addressed medium copying or posting is an infringement. This
+      website may not be addressed or otherwise reproduced, posted or
+      transmitted, without the permission of the Chief Executive Officer at
+      KOT ENTERPRISES (PRIVATE) LIMITED.
+    </p>
+  </div>
+
+  <div class="footer-center">
+    <p>&copy; 2025 KOT Enterprises. All rights reserved</p>
+  </div>
+
+  <div class="footer-right">
+   <a href="https://www.instagram.com/kotglobal?igsh=eHFrMnl1dmFhZWZ4&utm_source=qr
+"> <i class="fab fa-instagram social-icon"></i> </a>
+   <!-- <a href=""> <i class="fab fa-youtube social-icon"></i> </a>
+      <a href=""><i class="bi bi-twitter  social-icon" ></i> </a>  -->
+   <a href="https://www.linkedin.com/company/kotenterprises/"> <i class="fab fa-linkedin-in social-icon"></i> </a>
+    <a href="https://www.facebook.com/share/19DBLw7Y7x/?mibextid=wwXIfr
+"><i class="fab fa-facebook-f social-icon"></i></a>
+  </div>
+</footer>
+  </div>
+<!-- end-of-footer-section -->
+ <script>
+        window.onload = function () {
+            // Hide the preloader after 3 seconds
+            setTimeout(function () {
+                document.getElementById('preloader').style.opacity = '0';
+                document.getElementById('content').style.display = 'block';
+                
+                // Remove the preloader from the DOM after fade out
+                setTimeout(function () {
+                    document.getElementById('preloader').style.display = 'none';
+                }, 500);
+            }, 3000); // Preloader will disappear after 3 seconds
+        };
+
+        // Toggle nav menu
+      function toggleNav() {
+        document.getElementById('navLinks').classList.toggle('show');
+      }
+
+      // Toggle crown mega menu
+      function toggleMega() {
+        document.getElementById('megaMenu').classList.toggle('show');
+        // Close hamburger mega menu if open
+        document.getElementById('hamburgerMegaMenu').classList.remove('show');
+      }
+      
+      // Toggle hamburger mega menu
+      function toggleHamburgerMega() {
+        document.getElementById('hamburgerMegaMenu').classList.toggle('show');
+        // Close crown mega menu if open
+        document.getElementById('megaMenu').classList.remove('show');
+      }
+      
+      // Toggle dropdowns in hamburger mega menu
+      function toggleHamburgerDropdown(element) {
+        const dropdown = element.nextElementSibling;
+        const icon = element.querySelector('i');
+        
+        dropdown.classList.toggle('show');
+        
+        // Rotate caret icon
+        if (dropdown.classList.contains('show')) {
+          icon.classList.remove('fa-caret-down');
+          icon.classList.add('fa-caret-up');
+        } else {
+          icon.classList.remove('fa-caret-up');
+          icon.classList.add('fa-caret-down');
+        }
+      }
+
+      // Close menus when clicking outside
+      document.addEventListener('click', function(event) {
+        const megaMenu = document.getElementById('megaMenu');
+        const hamburgerMegaMenu = document.getElementById('hamburgerMegaMenu');
+        const crownBtn = document.querySelector('.crownbtn');
+        const hamburgerBtn = document.querySelector('.hamburger');
+        
+        // Close mega menu if clicked outside
+        if (megaMenu.classList.contains('show') && 
+            !megaMenu.contains(event.target) && 
+            !crownBtn.contains(event.target)) {
+          megaMenu.classList.remove('show');
+        }
+        
+        // Close hamburger mega menu if clicked outside
+        if (hamburgerMegaMenu.classList.contains('show') && 
+            !hamburgerMegaMenu.contains(event.target) && 
+            !hamburgerBtn.contains(event.target)) {
+          hamburgerMegaMenu.classList.remove('show');
+        }
+      });
+
+      // Handle dropdowns on mobile
+      document.addEventListener('DOMContentLoaded', function () {
+        const navItems = document.querySelectorAll('.nav-links > li');
+        navItems.forEach(item => {
+          item.addEventListener('click', function (e) {
+            if (window.innerWidth <= 767) {
+              e.preventDefault(); 
+              navItems.forEach(i => {
+                if (i !== item) i.classList.remove('open');
+              });
+              item.classList.toggle('open');
+            }
+          });
+        });
+      });
+
+      // date
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const dateInput = document.getElementById('issue_date');
+        
+        // Allow manual input by preventing certain keystrokes
+        dateInput.addEventListener('keydown', function(e) {
+            // Allow numbers, dash, and navigation keys
+            if ((e.key >= '0' && e.key <= '9') || 
+                e.key === '-' || 
+                e.key === 'Backspace' || 
+                e.key === 'Delete' || 
+                e.key === 'ArrowLeft' || 
+                e.key === 'ArrowRight' || 
+                e.key === 'Tab') {
+                return true;
+            }
+            
+            // Prevent all other keys including the dropdown trigger
+            if (e.key !== 'F4' && !(e.altKey && e.key === 'ArrowDown')) {
+                e.preventDefault();
+                return false;
+            }
+        });
+        
+        // Format the date as user types (basic auto-formatting)
+        dateInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            
+            if (value.length > 4) {
+                value = value.substring(0, 4) + '-' + value.substring(4);
+            }
+            if (value.length > 7) {
+                value = value.substring(0, 7) + '-' + value.substring(7, 9);
+            }
+            
+            e.target.value = value;
+        });
+    });
+    </script>
+</body>
+</html>
+
+
+
+
+
+

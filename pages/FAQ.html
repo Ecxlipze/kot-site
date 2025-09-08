@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQs</title>
+  <link rel="icon" href="../assets/images/navImg/Vector.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/CSS/FAQ.css">
+    <style>
+    /* Reset and base */
+   
+  </style>
+</head>
+<body>
+  <!-- Mobile menu button -->
+  <button class="menu-toggle" id="menuToggle">☰</button>
+
+  <!-- FAQ Wrapper -->
+  <main class="faq-wrapper">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="nav-top">
+        <button>📝 New Chat</button>
+        <button>🔍 Search Chat</button>
+      </div>
+
+      <h3>Conversations</h3>
+      <button>What happens after I apply?</button>
+      <button>Still have questions?</button>
+      <button>Can I work remotely?</button>
+    </aside>
+
+    <!-- Main Content -->
+    <section class="main">
+      <h1><span>FAQs</span></h1>
+      <p>What are you searching for?</p>
+      <input class="search-box" type="text" placeholder="Let’s start our conversation" />
+    </section>
+
+  </main>
+
+  <script>
+    // Toggle mobile menu
+    const menuToggle = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+    
+    menuToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+    
+    // Close menu when clicking outside on mobile
+    document.addEventListener('click', (e) => {
+      if (window.innerWidth <= 1024 && 
+          !sidebar.contains(e.target) && 
+          e.target !== menuToggle) {
+        sidebar.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>

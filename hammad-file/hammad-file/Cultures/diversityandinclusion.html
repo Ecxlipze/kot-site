@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOT ENTERPRISES</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+    />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/styles/styles.css" />
+  <link rel="stylesheet" href="../assets/styles/style.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles/media_querie.css">
+    <style></style>
+  </head>
+  <body class="overflow-x-hidden">
+  
+   <!-- class="overflow-x-hidden"> -->
+    <!-- Pattern Background -->
+      <div id="preloader">
+        <img src="../assets/images/preload.png" alt="Loading..." id="preloader-image">
+    </div>
+
+    <!-- Content -->
+    <div id="content">
+    <div class="hero-pattern"></div>
+
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="../index.html"> <img src="../assets/images/Logo.png" alt="KOT Logo"></a>
+      </div>
+
+      <!-- Center nav -->
+      <ul class="nav-links" id="navLinks" style="padding-top: 12px;">
+        <li><button class="close-btn" onclick="toggleNav()">×</button></li>
+        <li><a href="careerHomePage.html">Careers</a></li>
+        <li><a href="hiring-tips.html">Hiring Tips</a></li>
+        <li><a href="#">Locations</a></li>
+        <li>
+          <a href="oppurtunities.html">Opportunities <i class="fas fa-caret-down"></i></a>
+          <ul>
+            <li><a href="Audits.php">Audits</a></li>
+            <li><a href="Education.php">Education Support</a></li>
+            <li><a href="Partner.php">Partner Support</a></li>
+            <li><a href="Work.php">Work Support</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Programs <i class="fas fa-caret-down"></i></a>
+          <ul>
+            <li><a href="#">SaaS Tools</a></li>
+            <li><a href="#">E-commerce</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"> Contact Us <i class="fas fa-caret-down"></i></a>
+          <ul>
+            <li><a href="Data-Enginerring.php">Data Engineering</a></li>
+            <li><a href="Gen-AI.php">Generative AI</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Right icons -->
+      <div class="nav-right">
+        <button><img src="https://www.worldometers.info/img/flags/uk-flag.gif" class="flag" alt=""> English</button>
+        <button><i class="fas fa-shopping-cart"></i><a href="cart.php"> Cart </a></button>
+        <button><i class="fas fa-user"></i><a href="sign in email.php"> Sign In </a></button>
+        <button class="crownbtn" onclick="toggleMega()"><i class="fas fa-crown"></i></button>
+        <button class="hamburger" onclick="toggleHamburgerMega()"><i class="fas fa-th"></i></button>
+      </div>
+
+      <!-- Crown Mega menu -->
+      <div class="mega-menu" id="megaMenu">
+        <button class="close-btn" onclick="toggleMega()">×</button>
+        <div class="mega-content">
+          <!-- Column 1 -->
+          <div class="mega-col">
+            <h4><a href="../pages2/AppSculp.php"> App Sculpt </a></h4>
+            <ul>
+              <li><a href="#">Native Mobile App (Android)</a></li>
+              <li><a href="#">Native Mobile App (iOS)</a></li>
+              <li><a href="#">Flutter App Development</a></li>
+            </ul>
+          </div>
+          <!-- Column 2 -->
+          <div class="mega-col">
+            <h4><a href="../pages2/AppSculp.php"> App Sculpt </a></h4>
+            <ul>
+              <li><a href="#">Software as a Service</a></li>
+              <li><a href="#">Point of Sales</a></li>
+              <li><a href="#">Ecommerce Platforms</a></li>
+              <li><a href="#">Healthcare Systems</a></li>
+              <li><a href="#">LMS & ERP Systems</a></li>
+              <li><a href="#">Inventory & HRM Systems</a></li>
+            </ul>
+          </div>
+          <!-- Column 3 -->
+          <div class="mega-col">
+            <h4><a href="../pages2/digitrail.php"> DigiTrail </a></h4>
+            <ul>
+              <li><a href="#">SEO</a></li>
+              <li><a href="#">Social Media Marketing</a></li>
+              <li><a href="#">Content Marketing</a></li>
+              <li><a href="#">PPC Marketing</a></li>
+              <li><a href="#">Email Marketing</a></li>
+              <li><a href="#">Branding & Audit</a></li>
+            </ul>
+          </div>
+          <!-- Column 4 -->
+          <div class="mega-col">
+            <h4><a href="../pages2/graphoria.php"> Graphiora </a></h4>
+            <ul>
+              <li><a href="#">Logo & Brand Identity</a></li>
+              <li><a href="#">Print & Digital Design</a></li>
+              <li><a href="#">Web & UI/UX Design</a></li>
+              <li><a href="#">Packaging Design</a></li>
+            </ul>
+          </div>
+          <!-- Column 5 -->
+          <div class="mega-col">
+            <h4><a href="../pages2/web-sculputer.php"> Web Sculpt </a></h4>
+            <ul>
+              <li><a href="#">Custom Website Dev</a></li>
+              <li><a href="#">Front & Backend Dev</a></li>
+              <li><a href="#">API Integration</a></li>
+              <li><a href="#">Maintenance & Support</a></li>
+              <li><a href="#">Market Research</a></li>
+            </ul>
+          </div>
+          <!-- Column 6 -->
+          <div class="mega-col">
+            <h4><a href="../pages2/venture-xecelator.php"> Venture Xcelerator </a></h4>
+            <ul>
+              <li><a href="#">Mentorship & Coaching</a></li>
+              <li><a href="#">Business Strategy</a></li>
+              <li><a href="#">Networking & Partnerships</a></li>
+              <li><a href="#">Funding & Investment</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Hamburger Mega menu -->
+      <div class="hamburger-mega-menu" id="hamburgerMegaMenu">
+        <button class="close-btn" onclick="toggleHamburgerMega()">×</button>
+        <div class="hamburger-mega-content">
+          <!-- Main Navigation Column -->
+          <div class="hamburger-mega-col">
+            <h4>Main Navigation</h4>
+            <ul>
+              <li><a href="careerHomePage.html">Careers</a></li>
+              <li><a href="hiring-tips.html">Hiring Tips</a></li>
+              <li><a href="#">Locations</a></li>
+              <li>
+                <a href="javascript:void(0)" onclick="toggleHamburgerDropdown(this)">
+               <a href="oppurtunities.html">   Opportunities <i class="fas fa-caret-down"></i> </a>
+                </a>
+                <ul class="hamburger-dropdown">
+                  <li><a href="Audits.php">Audits</a></li>
+                  <li><a href="Education.php">Education Support</a></li>
+                  <li><a href="Partner.php">Partner Support</a></li>
+                  <li><a href="Work.php">Work Support</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0)" onclick="toggleHamburgerDropdown(this)">
+                  Programs <i class="fas fa-caret-down"></i>
+                </a>
+                <ul class="hamburger-dropdown">
+                  <li><a href="#">SaaS Tools</a></li>
+                  <li><a href="#">E-commerce</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0)" onclick="toggleHamburgerDropdown(this)">
+                  Contact Us <i class="fas fa-caret-down"></i>
+                </a>
+                <ul class="hamburger-dropdown">
+                  <li><a href="Data-Enginerring.php">Data Engineering</a></li>
+                  <li><a href="Gen-AI.php">Generative AI</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ================= HEADER END ================= -->
+  <!-- IUTP-section-start -->
+<div class="container-fluid iutp-bg-image mb-4 " >
+   <!-- Marquee Section with Side Images on Left & Right -->
+<div class="marquee-wrapper  position-relative d-flex align-items-center overflow-hidden" style="height: 60px;">
+  
+  <!-- Left Image -->
+  <div class="position-absolute start-0 top-0 bottom-0 z-2 d-flex align-items-center px-2 ">
+    <img src="../assets/images/marquee-left-image.png" alt="Left" class="marqueeajust" />
+  </div>
+
+  <!-- Scrolling Text -->
+  <div class="marquee-text-container flex-grow-1 px-5">
+  <div class="marquee-text-track">
+    <div class="marquee-text fw-bold">
+      <span>
+        <img src="../assets/images/marquee.png" alt="">
+      </span>
+      KOT Enterprises priorities cultural values and well being of work spaces. Therefore staff will be visiting Siran Valley.
+    </div>
+    <div class="marquee-text fw-bold">
+      <span>
+        <img src="../assets/images/marquee.png" alt="">
+      </span>
+      KOT Enterprises priorities cultural values and well being of work spaces. Therefore staff will be visiting Siran Valley.
+    </div>
+  </div>
+</div>
+
+
+  <!-- Right Image -->
+  <div class="position-absolute end-0 top-0 bottom-0 z-2 d-flex align-items-center px-2 ">
+    <img src="../assets/images/marquee-right-image.png" alt="Right" class="marqueeajustright" style="margin-right: 11%;"/>
+  </div>
+
+</div>
+<!-- marquee area end here -->
+    <div class=" pt-5">
+<div class="row ">
+    
+ <div class="col-lg-7 col-md-7 iutp-text">
+<h1>Diversity and inclusion</h1>
+ </div>
+ <div class="col-lg-5 col-md-5 main-iutp-input-btn ">
+ 
+        <div class="impact-mater-find-img  mb-5  ">
+          <span><a href="oppurtunities.html">FIND JOBS</a></span>
+        </div>
+ </div>
+    </div>
+ </div>
+</div>
+ <!--  IUTP-section-end -->
+
+
+
+
+<!-- Our cultural attributes-section-start -->
+<!-- Our cultural attributes-section-start -->
+  <div class="container-fluid cultre-attribute-bg mt-2 pb-3 mb-4">
+    <div class="row">
+
+      <!-- Left Column: Text + Slider -->
+      <div class="p-5 culture-left">
+        <div class="culture-attribute-text">
+          <h2>A culture that drives innovation</h2>
+        </div>
+
+        <!-- Swiper Main -->
+        <div class="swiper-main">
+          <div class="swiper-container">
+            <div class="fade-overlay"></div> 
+            <div class="swiper-wrapper">
+
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <div class="chat-box">
+                  <img src="../assets/images/culture-image/dieyeicon.png" alt="">
+                  <h1>Growth mindset</h1>
+                  <p>
+                    We fundamentally believe that we need a culture 
+                    founded in a growth mindset. It starts with a belief
+                    that everyone can grow and develop; that potential
+                    is nurtured, not pre-determined; and that anyone 
+                    can change their mindset.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <div class="chat-box">
+                  <img src="../assets/images/culture-image/dieyeicon.png" alt="">
+                  <h1>Customer obsessed</h1>
+                  <p>
+                    We fundamentally believe that we need a culture 
+                    founded in a growth mindset. It starts with a belief 
+                    that everyone can grow and develop; that potential
+                    is nurtured, not pre-determined; and that anyone
+                    can change their mindset.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <div class="chat-box">
+                  <img src="../assets/images/culture-image/dieyeicon.png" alt="">
+                  <h1>Continuous learning</h1>
+                  <p>
+                    We foster an environment of constant improvement 
+                    where feedback is valued and every team member 
+                    is encouraged to expand their knowledge daily.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          
+        </div>
+      </div>
+
+      <!-- Right Column: Image + Fade -->
+      <div class="culture-right">
+        <div class="fade-cluture-image">
+          <img src="../assets/images/culture-image/culture-fade-image.png" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Our cultural attributes-section-end -->
+
+<!-- Our cultural attributes-section-end -->
+<!-- Our cultural attributes-section-end -->
+
+
+
+
+
+
+<!-- Investing in an inclusive future-section-start -->
+
+<div class="container-fluid Investing-bg-image py-5">
+  
+  <div class="slider-container-Investing">
+
+    <!-- Left Arrow -->
+    
+
+    <!-- Left Blue Image -->
+    <img src="../assets/images/our-benifits-images/wcb-left-slider-image.png" 
+         class="slider-side-image-Investing left-image-Investing" alt="">
+
+    <!-- Slider -->
+    <div class="slider-wrapper-Investing" id="slider">
+
+      <!-- Slide 1 -->
+      <div class="slider-item-Investing col-lg-12">
+        <h3>Investing in an inclusive future</h3>
+        <h1>Military Affairs</h1>
+        <p>
+          KOT Enterprises is redefining how we empower the military community. 
+          In collaboration with our partners, we take a comprehensive approach 
+          to equipping veterans and military personnel with the skills needed 
+          to thrive in high-impact, in-demand roles across the tech industry 
+          and beyond.
+        </p>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slider-item-Investing col-lg-12">
+        <h3>Investing in an inclusive future</h3>
+        <h1>Military Affairs</h1>
+        <p>
+          KOT Enterprises is redefining how we empower the military community. 
+          In collaboration with our partners, we take a comprehensive approach 
+          to equipping veterans and military personnel with the skills needed 
+          to thrive in high-impact, in-demand roles across the tech industry 
+          and beyond.
+        </p>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slider-item-Investing col-lg-12">
+        <h3>Investing in an inclusive future</h3>
+        <h1>Military Affairs</h1>
+        <p>
+          KOT Enterprises is redefining how we empower the military community. 
+          In collaboration with our partners, we take a comprehensive approach 
+          to equipping veterans and military personnel with the skills needed 
+          to thrive in high-impact, in-demand roles across the tech industry 
+          and beyond.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Right Blue Image -->
+    <img src="../assets/images/our-benifits-images/wcb-right-slider-image.png" 
+         class="slider-side-image-Investing right-image-Investing" alt="">
+
+   
+  </div>
+</div>
+
+
+<!-- Investing in an inclusive future-section-end -->
+
+<!--Inside-Inclusion-section start -->
+<div class="container-fluid my-5 ouc-main-bg-ouc mt-4">
+  <!-- <h5 class="ouc-heading">Our Clients</h5> -->
+  <h2 class=" mb-2">Inside Inclusion</h2>
+
+  <div class="ouc-slider-section">
+  
+
+    <!-- Swiper Slider -->
+    <div class="ouc-swiper-container swiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide ouc-swiper-slide">
+          <div class="ouc-big">
+            <div class="ouc-slide-img-wrapper">
+              <img src="../assets/images/culture-image/slider-swiper-front-img.png" class="ouc-slide-img" alt="Front Image Missing">
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide ouc-swiper-slide">
+          <div class="ouc-big">
+            <div class="ouc-slide-img-wrapper">
+              <img src="../assets/images/culture-image/slider-swiper-front-img.png" class="ouc-slide-img" alt="Front Image Missing">
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide ouc-swiper-slide">
+          <div class="ouc-big">
+            <div class="ouc-slide-img-wrapper">
+              <img src="../assets/images/culture-image/slider-swiper-front-img.png" class="ouc-slide-img" alt="Front Image Missing">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Side Images -->
+    <img src="../assets/images/our-benifits-images/wcb-left-slider-image.png" class="ouc-slider-side-image ouc-left-image" alt="">
+    <img src="../assets/images/our-benifits-images/wcb-right-slider-image.png" class="ouc-slider-side-image ouc-right-image" alt="">
+
+    
+  </div>
+</div>
+<!-- our-client-section end -->
+<!-- inside iclusion end -->
+<!-- our-client-section end -->
+ <div class="mobile-slider-container">
+        
+        <h2 class="mobile-main-heading pt-4">Inside Inclusion</h2>
+        
+        <div class="mobile-slider">
+            <div class="mobile-slider-track">
+                <div class="mobile-slide">
+                    <p class="mobile-testimonial-text">"At KOT Enterprises, whether you’re working from home or the office, we equip you with the tools, technology, and trust you need to perform at your best. Our flexible work culture is rooted in autonomy, accountability, and mutual trust—empowering you to choose how you work "</p>
+                    <p class="mobile-testimonial-author">- Sarah Johnson, Marketing Director</p>
+                </div>
+                
+                <div class="mobile-slide">
+                    <p class="mobile-testimonial-text">"KOT Enterprises is redefining how we empower the military community. In collaboration with our partners, we take a comprehensive approach to equipping veterans and military personnel with the skills needed to thrive in high-impact, in-demand roles across the tech industry and beyond."</p>
+                    <p class="mobile-testimonial-author">- Michael Chen, Tech Startup CEO</p>
+                </div>
+                
+                <div class="mobile-slide">
+                    <p class="mobile-testimonial-text">"The results speak for themselves. Our website traffic increased by 200% and conversion rates tripled since implementing their strategies. Highly recommended!"</p>
+                    <p class="mobile-testimonial-author">- Emily Rodriguez, E-commerce Manager</p>
+                </div>
+                
+                <div class="mobile-slide">
+                    <p class="mobile-testimonial-text">"We fundamentally believe that we need a culture founded in a growth mindset. It starts with a belief that everyone can grow and develop; that potential is nurtured, not pre-determined; and that anyone can change their mindset. "</p>
+                    <p class="mobile-testimonial-author">- James Wilson, Creative Director</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Swiper JS -->
+
+<!-- our-client-section end -->
+ <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-left">
+    <p>
+      This website is authorized for office use externally or internally
+      marked or addressed medium copying or posting is an infringement. This
+      website may not be addressed or otherwise reproduced, posted or
+      transmitted, without the permission of the Chief Executive Officer at
+      KOT ENTERPRISES (PRIVATE) LIMITED.
+    </p>
+  </div>
+
+  <div class="footer-center">
+    <p>&copy; 2025 KOT Enterprises. All rights reserved</p>
+  </div>
+
+ <div class="footer-right">
+   <a href="https://www.instagram.com/kotglobal?igsh=eHFrMnl1dmFhZWZ4&utm_source=qr
+"> <i class="fab fa-instagram social-icon"></i> </a>
+   <!-- <a href=""> <i class="fab fa-youtube social-icon"></i> </a>
+      <a href=""><i class="bi bi-twitter  social-icon" ></i> </a>  -->
+   <a href="https://www.linkedin.com/company/kotenterprises/"> <i class="fab fa-linkedin-in social-icon"></i> </a>
+    <a href="https://www.facebook.com/share/19DBLw7Y7x/?mibextid=wwXIfr
+"><i class="fab fa-facebook-f social-icon"></i></a>
+  </div>
+</footer> 
+    </div>
+<!-- end-of-footer-section -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+
+
+    <!-- Investing slider -->
+     <script>
+
+ const slider = document.getElementById("slider");
+let autoScroll; // interval ka reference store karne ke liye
+
+function scrollSlider(direction) {
+  const scrollAmount = slider.clientWidth;
+  slider.scrollLeft += direction * scrollAmount;
+}
+
+function startAutoScroll() {
+  autoScroll = setInterval(() => {
+    slider.scrollLeft += slider.clientWidth;
+    if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
+      slider.scrollLeft = 0;
+    }
+  }, 3500);
+}
+
+function stopAutoScroll() {
+  clearInterval(autoScroll);
+}
+
+// Start autoplay by default
+startAutoScroll();
+
+// Hover par autoplay stop
+slider.addEventListener("mouseenter", stopAutoScroll);
+
+// Hover remove par autoplay start
+slider.addEventListener("mouseleave", startAutoScroll);
+
+  // slider-inside layer image
+  // single image slider
+ var oucSwiper = new Swiper('.ouc-swiper-container', {
+  loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false // taake manual navigation ke baad bhi autoplay chalta rahe
+  },
+  speed: 2000,
+  slidesPerView: 1.2,
+  spaceBetween: 50,
+  navigation: {
+    nextEl: '.ouc-swiper-button-next',
+    prevEl: '.ouc-swiper-button-prev'
+  }
+});
+
+// Hover par autoplay stop
+document.querySelector('.ouc-swiper-container').addEventListener('mouseenter', function () {
+  oucSwiper.autoplay.stop();
+});
+
+// Hover remove par autoplay start
+document.querySelector('.ouc-swiper-container').addEventListener('mouseleave', function () {
+  oucSwiper.autoplay.start();
+});
+// end slider
+  document.addEventListener("DOMContentLoaded", function () {
+  var swiper = new Swiper('.swiper-container', {
+    direction: 'vertical', // or 'vertical' if you want
+    loop: true,
+    speed: 1000,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    autoHeight: true,
+    navigation: {
+      nextEl: '.swiper-button-down',
+      prevEl: '.swiper-button-up',
+    },
+  });
+
+  const swiperContainer = document.querySelector('.swiper-container');
+
+  swiperContainer.addEventListener('mouseenter', () => {
+    swiper.autoplay.stop();
+  });
+
+  swiperContainer.addEventListener('mouseleave', () => {
+    swiper.autoplay.start();
+  });
+});
+
+   window.onload = function () {
+            // Hide the preloader after 3 seconds
+            setTimeout(function () {
+                document.getElementById('preloader').style.opacity = '0';
+                document.getElementById('content').style.display = 'block';
+                
+                // Remove the preloader from the DOM after fade out
+                setTimeout(function () {
+                    document.getElementById('preloader').style.display = 'none';
+                }, 500);
+            }, 3000); // Preloader will disappear after 3 seconds
+        };
+
+        // Toggle nav menu
+      function toggleNav() {
+        document.getElementById('navLinks').classList.toggle('show');
+      }
+
+      // Toggle crown mega menu
+      function toggleMega() {
+        document.getElementById('megaMenu').classList.toggle('show');
+        // Close hamburger mega menu if open
+        document.getElementById('hamburgerMegaMenu').classList.remove('show');
+      }
+      
+      // Toggle hamburger mega menu
+      function toggleHamburgerMega() {
+        document.getElementById('hamburgerMegaMenu').classList.toggle('show');
+        // Close crown mega menu if open
+        document.getElementById('megaMenu').classList.remove('show');
+      }
+      
+      // Toggle dropdowns in hamburger mega menu
+      function toggleHamburgerDropdown(element) {
+        const dropdown = element.nextElementSibling;
+        const icon = element.querySelector('i');
+        
+        dropdown.classList.toggle('show');
+        
+        // Rotate caret icon
+        if (dropdown.classList.contains('show')) {
+          icon.classList.remove('fa-caret-down');
+          icon.classList.add('fa-caret-up');
+        } else {
+          icon.classList.remove('fa-caret-up');
+          icon.classList.add('fa-caret-down');
+        }
+      }
+
+      // Close menus when clicking outside
+      document.addEventListener('click', function(event) {
+        const megaMenu = document.getElementById('megaMenu');
+        const hamburgerMegaMenu = document.getElementById('hamburgerMegaMenu');
+        const crownBtn = document.querySelector('.crownbtn');
+        const hamburgerBtn = document.querySelector('.hamburger');
+        
+        // Close mega menu if clicked outside
+        if (megaMenu.classList.contains('show') && 
+            !megaMenu.contains(event.target) && 
+            !crownBtn.contains(event.target)) {
+          megaMenu.classList.remove('show');
+        }
+        
+        // Close hamburger mega menu if clicked outside
+        if (hamburgerMegaMenu.classList.contains('show') && 
+            !hamburgerMegaMenu.contains(event.target) && 
+            !hamburgerBtn.contains(event.target)) {
+          hamburgerMegaMenu.classList.remove('show');
+        }
+      });
+
+      // Handle dropdowns on mobile
+      document.addEventListener('DOMContentLoaded', function () {
+        const navItems = document.querySelectorAll('.nav-links > li');
+        navItems.forEach(item => {
+          item.addEventListener('click', function (e) {
+            if (window.innerWidth <= 767) {
+              e.preventDefault(); 
+              navItems.forEach(i => {
+                if (i !== item) i.classList.remove('open');
+              });
+              item.classList.toggle('open');
+            }
+          });
+        });
+      });
+
+</script>
+  </body>
+</html>
